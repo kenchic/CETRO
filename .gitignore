@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/CETRO/Cetro.Tools/obj
+/src/CETRO/CetroApp/bin/Debug/net6.0
+/src/CETRO/CetroApp/obj
+/src/CETRO/.vs/CETRO
+/src/Centro.Api/obj
+/src/CetroApp/bin/Debug/net6.0
+/src/CetroApp/obj
+/src/Cetro.Tools/obj
