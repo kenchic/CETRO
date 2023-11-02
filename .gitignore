@@ -13,3 +13,4 @@
 /.vs
 /src/.vs
 /.gitignore
+/src/Cetro.Client/obj
