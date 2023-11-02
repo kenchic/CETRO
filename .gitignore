@@ -10,3 +10,6 @@
 /src/CetroApp/bin/Debug/net6.0
 /src/CetroApp/obj
 /src/Cetro.Tools/obj
+/.vs
+/src/.vs
+/.gitignore
