@@ -16,3 +16,10 @@
 /src/Cetro.Client/obj
 /src/Cetro.Mobil/obj
 /src/Cetro.App/obj
+/src/Centro.Api/bin/Debug/net6.0
+/src/Cetro.App/bin/Debug/net6.0
+/src/Cetro.Client/bin/Debug/netstandard2.1
+/src/Cetro.Component/bin/Debug/net6.0
+/src/Cetro.Component/obj
+/src/Cetro.Mobil/bin/Debug
+/src/Cetro.Tools/bin/Debug/netstandard2.1
