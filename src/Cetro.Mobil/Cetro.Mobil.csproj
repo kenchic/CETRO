@@ -49,4 +49,10 @@
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Cetro.Client\Cetro.Client.csproj" />
+      <ProjectReference Include="..\Cetro.Component\Cetro.Component.csproj" />
+      <ProjectReference Include="..\Cetro.Tools\Cetro.Tools.csproj" />
+    </ItemGroup>
+
 </Project>

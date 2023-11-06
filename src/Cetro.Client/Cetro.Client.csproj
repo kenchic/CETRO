@@ -5,4 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Cetro.Tools\Cetro.Tools.csproj" />
+  </ItemGroup>
+
 </Project>

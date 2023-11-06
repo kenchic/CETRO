@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cetro.App", "CetroApp\Cetro.App.csproj", "{8146B069-571C-4B4D-9007-062E8D1DD2CD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cetro.Tools", "Cetro.Tools\Cetro.Tools.csproj", "{132A6F79-5136-4D15-BBA0-D594A73127EF}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Centro.Api", "Centro.Api\Centro.Api.csproj", "{C6245857-84A1-4013-8369-8927C38ECFE3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cetro.Client", "Cetro.Client\Cetro.Client.csproj", "{197F8C63-6F76-42FD-ADC5-9ECDB82579C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cetro.Mobil", "Cetro.Mobil\Cetro.Mobil.csproj", "{52984AA2-596E-4098-9C91-E6733E98BA8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cetro.Mobil", "Cetro.Mobil\Cetro.Mobil.csproj", "{52984AA2-596E-4098-9C91-E6733E98BA8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cetro.App", "Cetro.App\Cetro.App.csproj", "{5B788655-6664-4981-9552-4501451072B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cetro.Component", "Cetro.Component\Cetro.Component.csproj", "{9DA268FF-7A9A-4B81-A5D6-23260A293DAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cetro.Tools", "Cetro.Tools\Cetro.Tools.csproj", "{D3F579C3-3AAC-444C-98C1-51C1F5414E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8146B069-571C-4B4D-9007-062E8D1DD2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8146B069-571C-4B4D-9007-062E8D1DD2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8146B069-571C-4B4D-9007-062E8D1DD2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8146B069-571C-4B4D-9007-062E8D1DD2CD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{132A6F79-5136-4D15-BBA0-D594A73127EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{132A6F79-5136-4D15-BBA0-D594A73127EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{132A6F79-5136-4D15-BBA0-D594A73127EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{132A6F79-5136-4D15-BBA0-D594A73127EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6245857-84A1-4013-8369-8927C38ECFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C6245857-84A1-4013-8369-8927C38ECFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6245857-84A1-4013-8369-8927C38ECFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,6 +35,18 @@ Global
 		{52984AA2-596E-4098-9C91-E6733E98BA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52984AA2-596E-4098-9C91-E6733E98BA8C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52984AA2-596E-4098-9C91-E6733E98BA8C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5B788655-6664-4981-9552-4501451072B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B788655-6664-4981-9552-4501451072B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B788655-6664-4981-9552-4501451072B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B788655-6664-4981-9552-4501451072B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA268FF-7A9A-4B81-A5D6-23260A293DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA268FF-7A9A-4B81-A5D6-23260A293DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA268FF-7A9A-4B81-A5D6-23260A293DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA268FF-7A9A-4B81-A5D6-23260A293DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F579C3-3AAC-444C-98C1-51C1F5414E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F579C3-3AAC-444C-98C1-51C1F5414E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F579C3-3AAC-444C-98C1-51C1F5414E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F579C3-3AAC-444C-98C1-51C1F5414E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
