@@ -23,3 +23,7 @@
 /src/Cetro.Component/obj
 /src/Cetro.Mobil/bin/Debug
 /src/Cetro.Tools/bin/Debug/netstandard2.1
+/src/Cetro.Client/bin/Release/netstandard2.1
+/src/Cetro.Component/bin/Release/net6.0
+/src/Cetro.Mobil/bin/Release/net6.0-windows10.0.19041.0/win10-x64
+/src/Cetro.Tools/bin/Release/netstandard2.1
