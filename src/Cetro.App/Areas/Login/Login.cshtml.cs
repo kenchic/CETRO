@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json;
-using System.Security.Claims;
 
 namespace Cetro.App.Areas.Login
 {
@@ -21,16 +19,6 @@ namespace Cetro.App.Areas.Login
                     CookieAuthenticationDefaults.AuthenticationScheme);
             }
             catch { }
-            //var autenticacionDTO = new AutenticacionDTO
-            //{
-            //    Empresa = empresa,
-            //    Usuario = usuario,
-            //    Clave = clave,
-            //    Token = string.Empty,
-            //    Terminal = string.Empty,
-            //    FechaInicio = DateTime.Now,
-            //    FechaFin = DateTime.MinValue
-            //};
 
             //var resultado = ClienteApi.PostRecurso(Configuracion.UrlApiDefender(), "api/Autenticar", autenticacionDTO);
             //if (!string.IsNullOrEmpty(resultado))
