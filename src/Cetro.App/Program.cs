@@ -2,6 +2,7 @@ using Cetro.App.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.ResponseCompression;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddMudServices();
 
 builder.Services.AddDataProtection()
     .PersistKeysToFileSystem(new DirectoryInfo("D:\\Documentos\\Proyectos\\llaves"))
@@ -40,7 +42,6 @@ builder.Services.AddResponseCompression(options =>
     options.Providers.Add<GzipCompressionProvider>();
 });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -59,5 +60,4 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-
 app.Run();

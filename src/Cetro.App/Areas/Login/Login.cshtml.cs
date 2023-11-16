@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace Cetro.App.Areas.Login
 {
     [AllowAnonymous]
-    public class Login : PageModel
+    public class LoginModel : PageModel
     {
         public async Task<IActionResult> OnGetAsync(string empresa, string usuario, string clave, string retornoUrl)
         {
