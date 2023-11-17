@@ -1,15 +1,4 @@
-﻿body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Jost', sans-serif;
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-}
-
-.main {
+﻿.main {
     width: 350px;
     height: 500px;
     background: red;
@@ -23,7 +12,7 @@
     display: none;
 }
 
-.signup {
+.login {
     position: relative;
     width: 100%;
     height: 100%;
@@ -75,7 +64,7 @@ button {
         background: #6d44b8;
     }
 
-.login {
+.signup {
     height: 460px;
     background: #eee;
     border-radius: 60% / 10%;
@@ -83,19 +72,20 @@ button {
     transition: .8s ease-in-out;
 }
 
-    .login label {
+    .signup label {
         color: #573b8a;
         transform: scale(.6);
     }
 
-#chk:checked ~ .login {
+#chk:checked ~ .signup {
     transform: translateY(-500px);
 }
 
-    #chk:checked ~ .login label {
+    #chk:checked ~ .signup label {
         transform: scale(1);
     }
 
-#chk:checked ~ .signup label {
+#chk:checked ~ .login label {
     transform: scale(.6);
 }
+
