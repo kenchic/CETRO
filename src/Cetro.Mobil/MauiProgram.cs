@@ -1,5 +1,5 @@
 ﻿using Cetro.Mobil.Data;
-using Microsoft.AspNetCore.Components.WebView.Maui;
+using System.Security.Claims;
 
 namespace Cetro.Mobil
 {
@@ -21,7 +21,7 @@ namespace Cetro.Mobil
 #endif
 
             builder.Services.AddSingleton<WeatherForecastService>();
-
+            builder.Services.AddAuthorizationCore();
             return builder.Build();
         }
     }

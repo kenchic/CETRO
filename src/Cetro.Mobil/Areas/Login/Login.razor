@@ -1,0 +1,77 @@
+﻿@page "/LoginControl"
+@inject NavigationManager NavigationManager
+@using System.Web;
+@using Cetro.Mobil.Areas.Shared;
+
+@layout MainLayoutLogin
+
+<div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="login">
+        <form>
+            <label for="chk" aria-hidden="true">CETRO </label>
+            <input type="email" name="email" placeholder="Usuario" required="">
+            <input type="password" name="pswd" placeholder="Clave" required="">
+            <button>Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div class="signup">
+        <form>
+            <label for="chk" aria-hidden="true">Registrar</label>
+            <input type="text" name="txt" placeholder="Usuario" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Clave" required="">
+            <button>Registrar</button>
+        </form>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public string RetornoUrl { get; set; } = string.Empty;
+
+    string Usuario = "";
+    string Clave = "";
+    string Empresa = "";
+
+    private ElementReference EntradaUsuario;
+
+    string state = "Message box hasn't been opened yet";
+
+    private string encode(string param)
+    {
+        return HttpUtility.UrlEncode(param);
+    }
+
+    /// <summary>
+    /// Método que controla el evento Initialized Async(inicio asicrono) de la pantalla
+    /// </summary>
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+
+        }
+        catch (Exception ex)
+        {
+
+        }
+    }
+
+
+    private void Ingresar()
+    {
+        NavigationManager.NavigateTo($"/Login?empresa={encode(Empresa)}&usuario={encode(Usuario)}&clave={encode(Clave)}&retornoUrl={encode(@RetornoUrl)}", forceLoad: true);
+    }
+
+    protected override async Task OnAfterRenderAsync(bool first)
+    {
+        if (first)
+        {
+            //await EntradaUsuario.FocusAsync();
+        }
+    }
+}
